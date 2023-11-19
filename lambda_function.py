@@ -26,6 +26,9 @@ def lambda_handler(event, context):
         print("this is face number ", i)
         print(json.dumps(face, indent = 2))
 
+    if i == 0:
+        print("no faces :(")
+
     result_buck = "my-rekog-results"
 
     i = 0
