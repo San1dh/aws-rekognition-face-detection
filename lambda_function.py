@@ -25,4 +25,17 @@ def lambda_handler(event, context):
         i += 1
         print("this is face number ", i)
         print(json.dumps(face, indent = 2))
+
+    result_buck = "my-rekog-results"
+
+    i = 0
+    for face in response['FaceDetails']:
+        res_file_name = file_name + '_face_' + str(i) + '.json'
+        i += 1
+        uploadByteStream = bytes(json.dumps(face, indent = 2).encode('UTF-8'))
     
+        s3.put_object(
+            Bucket = result_buck,
+            Key = res_file_name,
+            Body = uploadByteStream
+        )
