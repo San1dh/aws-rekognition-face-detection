@@ -20,6 +20,9 @@ def lambda_handler(event, context):
         )
 
     # Process result
+    i = 0
     for face in response['FaceDetails']:
+        i += 1
+        print("this is face number ", i)
         print(json.dumps(face, indent = 2))
     
