@@ -6,10 +6,20 @@ client = boto3.client('rekognition')
 def lambda_handler(event, context):
     # TODO implement
 
+    # bucket = event['Records'][0]['s3']['bucket']['name']
+    bucket = "my-own-rekognition-bucket"
+    key = event['Records'][0]['s3']['object']['key']
+    
+    # print(bucket)
+    print(key)
+    
+    # response = s3.get_object(Bucket=bucket, Key=key)
+    
     bucket_name = "my-own-rekognition-bucket"
-    file_name = "img5.jpg"
+    # file_name = "img5.jpg"
+    file_name = key
 
-     response = client.detect_faces(
+    response = client.detect_faces(
             Image={
                 'S3Object':{
                     'Bucket':bucket_name,
