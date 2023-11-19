@@ -3,6 +3,8 @@ import boto3
 
 client = boto3.client('rekognition')
 
+s3 = boto3.client('s3')
+
 def lambda_handler(event, context):
     # TODO implement
 
