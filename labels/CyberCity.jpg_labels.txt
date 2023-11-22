@@ -1,0 +1,28 @@
+LABEL NO         NAME            CONFIDENCE
+-----------------------------------------------
+1                Urban                100.0
+2                 City                100.0
+3             Lighting                99.92
+4           Metropolis                99.48
+5               Person                97.49
+6                 Road                97.09
+7               Street                97.09
+8                Light                93.96
+9           Night Life                91.01
+10                  Car                87.58
+11       Transportation                87.58
+12              Vehicle                87.58
+13              Walking                 85.1
+14         Architecture                82.79
+15             Building                82.79
+16               Nature                79.19
+17                Night                79.19
+18             Outdoors                79.19
+19            Cityscape                69.02
+20           Pedestrian                56.47
+Key  1 :
+Labels
+Key  2 :
+LabelModelVersion
+Key  3 :
+ResponseMetadata
