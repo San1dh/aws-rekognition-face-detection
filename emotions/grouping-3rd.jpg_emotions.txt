@@ -1,0 +1,24 @@
+-----------
+Face No  1
+Emotion: 
+HAPPY
+95.12
+------------
+-----------
+Face No  2
+Emotion: 
+HAPPY
+100.0
+------------
+-----------
+Face No  3
+Emotion: 
+HAPPY
+60.62
+------------
+-----------
+Face No  4
+Emotion: 
+HAPPY
+100.0
+------------
